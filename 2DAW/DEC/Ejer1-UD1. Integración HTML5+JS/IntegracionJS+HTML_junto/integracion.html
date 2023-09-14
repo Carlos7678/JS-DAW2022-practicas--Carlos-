@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Suma</h1>
+
+    <form>
+      <label for="1num">Primer Numero</label>
+      <input type="number" id="numero1" name="numero1" /><br /><br />
+      <label for="2num">Segundo Numero </label>
+      <input type="number" id="numero2" name="numero2" /><br /><br />
+      <input type="submit" value="Sumar" onclick="suma_y_muestra()" />
+    </form>
+
+    <script>
+      function suma_y_muestra() {
+        numero1 = document.getElementById("numero1").value;
+        numero2 = document.getElementById("numero2").value;
+        let resultado = parseInt(numero1) + parseInt(numero2);
+        alert("El resultado es: " + resultado);
+        return resultado;
+      }
+    </script>
+  </body>
+</html>
