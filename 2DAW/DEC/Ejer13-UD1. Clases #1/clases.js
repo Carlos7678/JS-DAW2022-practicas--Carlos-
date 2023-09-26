@@ -1,9 +1,9 @@
 class Alumno {
-  constructor(matricula, NIA, nombre, apellidos, curso, modulo) {
-    this.matricula = matricula;
-    this.NIA=NIA;
+  constructor(nombre, email, nombre, contraseña, curso, modulo) {
+    this.nombre = nombre;
+    this.email=email;
     this.nombre=nombre;
-    this.apellidos=apellidos;
+    this.contraseña=contraseña;
     this.curso=curso;
     this.modulo=modulo;
   }
@@ -18,7 +18,7 @@ function iniciar(){
 
 function mostrarDatos(){
 console.log("***************Datos alumnos del complejo Cheste***************");
-console.log("Matricula: "+Alumno1.matricula+"\nNIA: "+Alumno1.NIA+"\nCurso: "+Alumno1.curso+"\nModulo: "+Alumno1.modulo);
+console.log("nombre: "+Alumno1.nombre+"\nemail: "+Alumno1.email+"\nCurso: "+Alumno1.curso+"\nModulo: "+Alumno1.modulo);
 }
 
 iniciar();
