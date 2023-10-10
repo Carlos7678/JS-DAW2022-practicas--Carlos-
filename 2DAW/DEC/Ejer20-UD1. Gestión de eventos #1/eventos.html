@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Fondo con ALT + F12</title>
+    <style>
+        #imagen {
+            background-color: black;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="imagen">
+        <h1>ALT + F12</h1>
+    </div>
+    <script>
+        let fondoCambiado = false;
+
+        function cambiarFondo(event) {
+            if (event.altKey && event.keyCode === 123) {
+                if (!fondoCambiado) {
+                    document.getElementById("imagen").style.backgroundImage = 'url("https://source.unsplash.com/random")';
+                    fondoCambiado = true;
+                } else {
+                    document.getElementById("imagen").style.backgroundImage = '';
+                    fondoCambiado = false;
+                }
+            }
+        }
+        document.addEventListener("keydown", cambiarFondo);
+    </script>
+</body>
+</html>
