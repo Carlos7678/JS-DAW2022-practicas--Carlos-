@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Arrastra capas</title>
+    <style>
+      div {
+        border: 1px solid green-;
+        padding: 1em;
+        position: fixed;
+        top: 20px;
+        width: 200px;
+        height: 100px;
+      }
+      #capa1 {
+        left: 50px;
+        cursor: pointer;
+      }
+      #capa2 {
+        left: 400px;
+        background-color: white;
+        text-align: center;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="capa1" style="background-color: yellow" draggable="true">
+      Soy arrastrable
+    </div>
+    <div id="capa2">Soy el destino</div>
+    <script>
+      const capa1 = document.getElementById("capa1");
+      const capa2 = document.getElementById("capa2");
+
+      capa1.addEventListener("dragstart", (e) => {
+        e.dataTransfer.setData("text/plain", e.target.id);
+        capa1.style.opacity = "0.5";
+      });
+      capa2.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        capa2.style.backgroundColor = "red";
+      });
+      capa2.addEventListener("dragleave", () => {
+        capa2.style.backgroundColor = "white";
+      });
+      capa2.addEventListener("drop", (e) => {
+        e.preventDefault();
+        const idArrastrado = e.dataTransfer.getData("text/plain");
+        const elementoArrastrado = document.getElementById(idArrastrado);
+
+        capa1.style.display = "none";
+        capa2.textContent = "Triunfaste";
+        capa2.style.backgroundColor = "white";
+      });
+      capa1.addEventListener("dragend", () => {
+        capa1.style.opacity = "1";
+      });
+    </script>
+  </body>
+</html>
