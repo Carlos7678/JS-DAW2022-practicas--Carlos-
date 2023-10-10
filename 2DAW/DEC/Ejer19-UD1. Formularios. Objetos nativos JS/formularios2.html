@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Días</title>
+</head>
+<body>
+    <button onclick="calcularDiasTranscurridos()">Calcular</button>
+    <script>
+        function calcularDiferenciaEnDias(fechaNacimiento, fechaActual) {
+            const unDia = 24 * 60 * 60 * 1000; 
+            const nacimiento = new Date(fechaNacimiento);
+            const actual = new Date(fechaActual);
+            const diferenciaEnMilisegundos = actual - nacimiento;
+            const diferenciaEnDias = Math.floor(diferenciaEnMilisegundos / unDia);
+            return diferenciaEnDias;
+        }
+        function calcularDiasTranscurridos() {
+            const fechaNacimiento = prompt("Por favor, ingresa tu fecha de nacimiento (YYYY/MM/DD):");          
+            if (fechaNacimiento === null || fechaNacimiento === "") {
+                alert("No ingresaste una fecha válida.");
+                return;
+            }
+            const fechaActual = new Date().toISOString().split('T')[0];
+            const diasTranscurridos = calcularDiferenciaEnDias(fechaNacimiento, fechaActual);
+            alert(`Han transcurrido ${diasTranscurridos} días desde tu fecha de nacimiento.`);
+        }
+    </script>
+</body>
+</html>
+

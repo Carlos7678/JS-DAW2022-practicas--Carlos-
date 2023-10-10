@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversiones de Texto</title>
+  </head>
+  <body>
+    <h1>Conversiones de Texto</h1>
+    <label for="textoEntrada">Ingresa una cadena de texto:</label>
+    <input type="text" id="textoEntrada" />
+    <button onclick="realizarConversiones()">Realizar Conversiones</button>
+    <br /><br />
+    <div id="resultado"></div>
+    <script>
+      function invertirTexto(texto) {
+        return texto.split("").reverse().join("");
+      }
+      function convertirAMayusculas(texto) {
+        return texto.toUpperCase();
+      }
+      function repetirTexto(texto, veces) {
+        return texto.repeat(veces);
+      }
+      function invertirYMayusculas(texto) {
+        return convertirAMayusculas(invertirTexto(texto));
+      }
+
+      function realizarConversiones() {
+        const textoEntrada = document.getElementById("textoEntrada").value;
+        const resultado = document.getElementById("resultado");
+
+        const textoInvertido = invertirTexto(textoEntrada);
+        const textoMayusculas = convertirAMayusculas(textoEntrada);
+        const textoRepetido = repetirTexto(textoEntrada, 3);
+        const textoInvertidoMayusculas = invertirYMayusculas(textoEntrada);
+
+        resultado.innerHTML = `
+               Invertido: ${textoInvertido}<br>
+            Mayúsculas: ${textoMayusculas}<br>
+                Repetido: ${textoRepetido}<br>
+                Invertido en Mayúsculas: ${textoInvertidoMayusculas}
+            `;
+      }
+    </script>
+  </body>
+</html>

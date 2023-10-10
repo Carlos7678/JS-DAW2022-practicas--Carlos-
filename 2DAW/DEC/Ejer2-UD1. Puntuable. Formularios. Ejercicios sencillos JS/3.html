@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+    <title>ContadorVocalesFuerte</title>
+</head>
+<body>
+    <script>
+        var texto = window.prompt('Introduce una cadena de texto');
+        var contadorA = 0;
+
+        for (var i = 0; i < texto.length; i++) {
+            if (texto.substring(i, i + 1).toLowerCase() == 'a') { // Corrección aquí
+                contadorA++;
+            }
+        }
+
+        alert('La letra A aparece un total de ' + contadorA + ' veces');
+    </script>
+</body>
+</html>

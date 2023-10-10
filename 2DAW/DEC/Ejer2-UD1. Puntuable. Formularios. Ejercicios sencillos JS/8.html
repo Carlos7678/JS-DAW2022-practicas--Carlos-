@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Num COmparator</title>
+</head>
+<body>
+    <form id="formulario">
+        <label for="numero1">Número 1:</label>
+        <input type="text" id="numero1" name="numero1"><br><br>
+        <label for="numero2">Número 2:</label>
+        <input type="text" id="numero2" name="numero2"><br><br>
+        <label for="numero3">Número 3:</label>
+        <input type="text" id="numero3" name="numero3"><br><br>
+        <button type="button" onclick="compararNumeros()">Comparar Números</button>
+    </form>
+    <script>
+        function compararNumeros() {
+            const numero1 = parseFloat(document.getElementById("numero1").value);
+            const numero2 = parseFloat(document.getElementById("numero2").value);
+            const numero3 = parseFloat(document.getElementById("numero3").value);
+            if (isNaN(numero1) || isNaN(numero2) || isNaN(numero3)) {
+                alert("Por favor, ingresa valores numéricos en todos los campos.");
+            } else {
+                if (numero1 > numero2 && numero1 > numero3) {
+                    alert(`El número mayor es: ${numero1}`);
+                } else if (numero2 > numero1 && numero2 > numero3) {
+                    alert(`El número mayor es: ${numero2}`);
+                } else if (numero3 > numero1 && numero3 > numero2) {
+                    alert(`El número mayor es: ${numero3}`);
+                } else {
+                    alert("Los números son iguales.");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
