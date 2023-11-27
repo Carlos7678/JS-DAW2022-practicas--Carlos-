@@ -1,0 +1,79 @@
+
+* {
+    text-align: center;
+}
+
+.curso-header {
+    border: 1px solid #000;
+}
+
+
+
+body {
+    background: url('https://i.pinimg.com/originals/1a/04/69/1a046940247ca498deffecad4b839fc8.jpg') center center fixed;
+ background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h4{
+    color: white;
+}
+
+.card-body1 {
+    background-image: radial-gradient(
+        circle at 18.04% 52.8%,
+        #fda800 0,
+        #ff9800 8.33%,
+        #ff8500 16.67%,
+        #ff7000 25%,
+        #ff5900 33.33%,
+        #f43f0d 41.67%,
+        #e21c1c 50%,
+        #ce0024 58.33%,
+        #bc0029 66.67%,
+        #ab002e 75%,
+        #9c0033 83.33%,
+        #8f0039 91.67%,
+        #84003f 100%
+    );
+  }
+
+  .card-body2 {
+    background-image: radial-gradient(
+        circle at 27.59% 1.94%,
+        #b5d737 0,
+        #a4d635 16.67%,
+        #91d435 33.33%,
+        #7cd135 50%,
+        #64ce37 66.67%,
+        #47cc3b 83.33%,
+        #11c940 100%
+    );
+}
+.custom-card-header {
+    background-color: rgba(0, 0, 0, 0); 
+  }
+
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .content-container {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .iframe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  iframe {
+    margin-left: 35%;
+    border: 0;
+  }
