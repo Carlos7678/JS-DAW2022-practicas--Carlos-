@@ -1,4 +1,4 @@
-# Inicio | CLASES | SASS Y SCSS - Ejercicio 1
+# Inicio | CLASES | SASS Y SCSS - Ejercicio 2
 
 Este ejercicio tiene como objetivo crear una estructura básica de carpetas y archivos utilizando Visual Studio Code para trabajar con HTML, CSS puro, SASS y SCSS. A continuación, se detallan los pasos a seguir:
 
@@ -40,4 +40,4 @@ Asegúrate de referenciar correctamente cada archivo HTML con su respectiva hoja
 
 Abre cada archivo HTML en tu navegador para comprobar el resultado de los estilos aplicados. Verifica que los archivos preprocesados generen correctamente sus versiones compiladas en las carpetas correspondientes.
 
-¡Listo! Has completado el ejercicio 1. Si encuentras algún problema, revisa los pasos anteriores y asegúrate de seguir la estructura y nombres de archivos correctamente.
+¡Listo! Has completado el ejercicio 2. Si encuentras algún problema, revisa los pasos anteriores y asegúrate de seguir la estructura y nombres de archivos correctamente.
