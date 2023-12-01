@@ -4,7 +4,7 @@ Este ejercicio tiene como objetivo crear una estructura básica de carpetas y ar
 
 ## Estructura de Carpetas y Archivos
 
-1. Crea una nueva carpeta en Visual Studio Code llamada `ejercicio-1`.
+1. Crea una nueva carpeta en Visual Studio Code llamada `ejercicio-2`.
 
 2. Dentro de la carpeta `ejercicio-2`, crea tres archivos HTML con los siguientes nombres:
    - `index.html`
