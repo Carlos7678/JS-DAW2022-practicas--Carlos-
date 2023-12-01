@@ -1,4 +1,4 @@
-# Ejercicio 2
+# Ejercicio 3
 
 En este ejercicio, trabajaremos con HTML, SCSS, y Google Fonts para diseñar una página web siguiendo ciertos requisitos. Sigue los pasos a continuación:
 
@@ -60,4 +60,4 @@ En este ejercicio, trabajaremos con HTML, SCSS, y Google Fonts para diseñar una
 - Los iconos del footer tendrán un ancho de 3em, estarán centrados y en línea, con cierta separación entre ellos.
 - La letra del párrafo `p` será un 80% respecto de la del cuerpo.
 
-¡Listo! Has completado el Ejercicio 2. Recuerda seguir cada paso cuidadosamente y verificar los resultados en tu navegador.
+¡Listo! Has completado el Ejercicio 3. Recuerda seguir cada paso cuidadosamente y verificar los resultados en tu navegador.
