@@ -1,0 +1,15 @@
+var DEC = ['DEC', 7, 12];
+var DAW = ['DAW', 6, 12];
+var DWS = ['DWS', 9, 12];
+var DIW = ['IW', 5, 12];
+var ING = ['DWS', 3, 10];
+var EIE = ['IW', 3, 2];
+var profesor = 'Antonio Camarena';
+DEC.push(profesor);
+DAW.push('Marcos');
+DWS.push('Toni Cerezo');
+DIW.push('Borja');
+ING.push('Julio');
+EIE.push('Mari Carmen');
+console.log(DEC[0]);
+console.log(DEC[DEC.indexOf(profesor)]);
