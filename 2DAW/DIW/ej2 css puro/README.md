@@ -4,16 +4,16 @@ Este ejercicio tiene como objetivo crear una estructura básica de carpetas y ar
 
 ## Estructura de Carpetas y Archivos
 
-1. Crea una nueva carpeta en Visual Studio Code llamada `ejercicio-1`.
+1. Crea una nueva carpeta en Visual Studio Code llamada `ejercicio-2`.
 
-2. Dentro de la carpeta `ejercicio-1`, crea tres archivos HTML con los siguientes nombres:
+2. Dentro de la carpeta `ejercicio-2`, crea tres archivos HTML con los siguientes nombres:
    - `index.html`
    - `index_sass.html`
    - `index_scss.html`
 
-   Estos archivos serán similares al `index.html` proporcionado, pero cambiarás el texto "Ejercicio 1 CSS puro" por el tipo de CSS utilizado en cada caso (SASS y SCSS, respectivamente).
+   Estos archivos serán similares al `index.html` proporcionado, pero cambiarás el texto "Ejercicio 2 CSS puro" por el tipo de CSS utilizado en cada caso (SASS y SCSS, respectivamente).
 
-3. Crea tres carpetas dentro de `ejercicio-1` con los siguientes nombres:
+3. Crea tres carpetas dentro de `ejercicio-2` con los siguientes nombres:
    - `css`
    - `sass`
    - `scss`

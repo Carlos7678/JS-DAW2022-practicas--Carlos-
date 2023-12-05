@@ -4,7 +4,7 @@ En este ejercicio, trabajaremos con HTML, SCSS, y Google Fonts para diseñar una
 
 ## 1. Estructura de Carpetas y Archivos
 
-- Crea una nueva carpeta en Visual Studio Code llamada `ejercicio-2`.
+- Crea una nueva carpeta en Visual Studio Code llamada `ejercicio-3`.
 - Añade el archivo `index.html` con el código HTML proporcionado.
 
 ## 2. Configuración Inicial
