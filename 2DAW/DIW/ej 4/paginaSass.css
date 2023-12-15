@@ -1,92 +1,49 @@
-.button {
-  display: inline-block;
-  padding: 10px 20px;
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.container .btn {
+  padding: 10px 15px;
+  margin: 5px;
   border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 16px;
   cursor: pointer;
 }
-
-.primary-button {
-  background-color: #007bff;
+.container .btn:hover {
+  opacity: 0.8;
 }
-
-.secondary-button {
-  background-color: #6c757d;
+.container .btn.primary {
+  background-color: #3498db;
+  color: white;
 }
-
-.container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container .btn.secondary {
+  background-color: #2ecc71;
+  color: white;
 }
-
-.button-group {
-  display: flex;
-  gap: 10px;
+.container .btn.tertiary {
+  background-color: #e74c3c;
+  color: white;
 }
-.button-group .button {
-  margin-right: 10px;
+.container .special-button {
+  font-weight: bold;
 }
-
-.placeholder-text {
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
+.container .special-button {
+  background-color: #e74c3c;
+  color: white;
 }
-
-.placeholder-text {
-  background-color: #007bff;
-  padding: 10px;
-}
-
-.list {
+.container .my-list {
   list-style: none;
   padding: 0;
+  margin-top: 20px;
 }
-.list li {
-  margin-bottom: 10px;
+.container .my-list li:nth-child(odd) {
+  background-color: #f2f2f2;
 }
-
-.list-length {
-  color: #007bff;
-  font-weight: bold;
+.container .my-list li:nth-child(even) {
+  background-color: #e0e0e0;
 }
-
-.list-index {
-  color: #6c757d;
-  font-weight: bold;
-}
-
-.list-join {
-  color: #007bff;
-  font-weight: bold;
-}
-
-.list-append {
-  color: #6c757d;
-  font-weight: bold;
-}
-
-.map {
-  display: flex;
-  gap: 10px;
-}
-.map div {
+.container .mapped-elements {
+  background-color: value2;
+  border: 1px solid value3;
+  margin-top: 20px;
   padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-}
-
-.map-keys {
-  color: #6c757d;
-  font-weight: bold;
-}
-
-.map-values {
-  color: #007bff;
-  font-weight: bold;
 }/*# sourceMappingURL=paginaSass.css.map */

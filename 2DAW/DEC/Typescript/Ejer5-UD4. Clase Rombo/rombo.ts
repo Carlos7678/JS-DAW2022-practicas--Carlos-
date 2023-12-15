@@ -1,13 +1,13 @@
 class Rombo {
-    #longitudDiagonalH;
-    #longitudDiagonalV;
+  #longitudDiagonalH;
+  #longitudDiagonalV;
 
-    constructor(longitudDiagonalH, longitudDiagonalV) {
-        this.#longitudDiagonalH = longitudDiagonalH;
-        this.#longitudDiagonalV = longitudDiagonalV;
-    }
+  constructor(longitudDiagonalH, longitudDiagonalV) {
+    this.#longitudDiagonalH = longitudDiagonalH;
+    this.#longitudDiagonalV = longitudDiagonalV;
+  }
 
-    calcularArea = () => this.#longitudDiagonalH * this.#longitudDiagonalV;
+  calcularArea = () => this.#longitudDiagonalH * this.#longitudDiagonalV;
 }
 
 const rombo = new Rombo(10, 15);
