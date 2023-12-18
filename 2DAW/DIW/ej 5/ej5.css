@@ -1,0 +1,92 @@
+/* Default footer color */
+/* Media queries for different devices */
+@media (max-width: 1000px) {
+  /* Andrea's laptop */
+}
+@media (max-width: 800px) {
+  /* Dani's tablet */
+}
+@media (max-width: 100px) {
+  /* Gabi's smartphone */
+}
+/* Footer styles */
+footer {
+  background-color: lightgray;
+  padding: 20px;
+  /* Additional styles based on the device */
+  /* Additional text in the footer */
+}
+footer:after {
+  content: "Footer personalizado";
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Darken headers, make text lighter, and set background color to darkening red */
+h1 {
+  color: white;
+  background-color: #e60000;
+  padding: 10px;
+  /* Add buttons between each header */
+}
+h1 button {
+  display: block;
+  margin-top: 5px;
+}
+
+h2 {
+  color: white;
+  background-color: #cc0000;
+  padding: 10px;
+  /* Add buttons between each header */
+}
+h2 button {
+  display: block;
+  margin-top: 5px;
+}
+
+h3 {
+  color: white;
+  background-color: #b30000;
+  padding: 10px;
+  /* Add buttons between each header */
+}
+h3 button {
+  display: block;
+  margin-top: 5px;
+}
+
+h4 {
+  color: white;
+  background-color: #990000;
+  padding: 10px;
+  /* Add buttons between each header */
+}
+h4 button {
+  display: block;
+  margin-top: 5px;
+}
+
+h5 {
+  color: white;
+  background-color: maroon;
+  padding: 10px;
+  /* Add buttons between each header */
+}
+h5 button {
+  display: block;
+  margin-top: 5px;
+}
+
+h6 {
+  color: white;
+  background-color: #660000;
+  padding: 10px;
+  /* Add buttons between each header */
+}
+h6 button {
+  display: block;
+  margin-top: 5px;
+}/*# sourceMappingURL=ej5.css.map */

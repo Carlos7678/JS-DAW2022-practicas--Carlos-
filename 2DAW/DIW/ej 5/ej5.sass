@@ -1,0 +1,61 @@
+/* Default footer color */
+$footer-color: lightgray !default;
+
+/* Media queries for different devices */
+@media (max-width: 1000px) {
+    /* Andrea's laptop */
+    $footer-color: lightgreen;
+}
+
+@media (max-width: 800px) {
+    /* Dani's tablet */
+    $footer-color: orange;
+}
+
+@media (max-width: 100px) {
+    /* Gabi's smartphone */
+    $footer-color: red;
+}
+
+/* Footer styles */
+footer {
+    background-color: $footer-color;
+    padding: 20px;
+
+    /* Additional styles based on the device */
+    @if $footer-color == lightgreen {
+        border: 2px solid darkgreen;
+    }
+
+    @if $footer-color == orange {
+        box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    }
+
+    @if $footer-color == red {
+        border-radius: 10px;
+    }
+
+    /* Additional text in the footer */
+    &:after {
+        content: "Footer personalizado";
+        display: block;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #333; /* Cambia el color del texto según tu preferencia */
+    }
+}
+
+/* Darken headers, make text lighter, and set background color to darkening red */
+@for $i from 1 through 6 {
+    h#{$i} {
+        color: lighten(white, $i * 5%);
+        background-color: darken(red, $i * 5%);
+        padding: 10px; /* Espaciado interno para mejorar la apariencia */
+
+        /* Add buttons between each header */
+        button {
+            display: block;
+            margin-top: 5px;
+        }
+    }
+}
