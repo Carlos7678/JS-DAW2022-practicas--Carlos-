@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+
+$font-sizes: (
+  "body": 1rem,
+  "h1": 300%,
+  "h2": 200%,
+  "h3": 150%,
+  "footer p": 80% "nav ul li": 110%,
+);
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "bold": 700,
+);
+$font-family: "Nunito", sans-serif;
+$default-padding: 0;
+$max-width: 1400px;
+$default-margin: 0;
+$default-background: rgb(0, 255, 255);
+$default-foreground: rgb(30, 30, 30);
+$body: map-get($font-weights, "regular") map-get($font-sizes, "body")
+  $font-family;
+
+html {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+body {
+  font: $body;
+  color: $default-foreground;
+}
+
+h {
+  &1 {
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}))
+      $font-family;
+  }
+  &2 {
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}))
+      $font-family;
+  }
+  &3 {
+    font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}))
+      $font-family;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $default-foreground;
+}
+
+header {
+  text-align: center;
+  background-color: $default-background;
+  padding: 0.5em;
+
+  img {
+    width: 10%;
+    float: left;
+  }
+
+  h1,
+  h2 {
+    width: 90%;
+    margin: $default-margin;
+  }
+}
+
+nav {
+  background-color: $default-background;
+  padding: 0.1em;
+  margin: 0.5em 0 0 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  ul {
+    list-style: none;
+    margin: $default-margin;
+
+    li {
+      display: inline-block;
+      margin: $default-margin;
+      padding: 0.2em;
+      font: map-get($font-weights, "bold") map-get($font-sizes, quote(#{&}))
+        $font-family;
+
+      a {
+        font-weight: map-get($font-weights, "regular");
+
+        &:hover {
+          text-decoration: underline;
+          font-weight: map-get($font-weights, "bold");
+        }
+      }
+    }
+  }
+}
+
+section {
+  min-height: 20em;
+}
+
+footer {
+  text-align: center;
+
+  div {
+    background-color: $default-background;
+    margin-bottom: 0.5em;
+    padding: 0.2em 0 0 0;
+
+    img {
+      width: 3em;
+    }
+  }
+
+  p {
+    background-color: $default-background;
+    margin: $default-margin;
+    padding: 0.1em 0;
+    font: map-get($font-weights, "light") map-get($font-sizes, quote(#{&}))
+      $font-family;
+
+    & a:hover {
+      text-decoration: underline;
+      font-weight: map-get($font-weights, "bold");
+    }
+  }
+}
